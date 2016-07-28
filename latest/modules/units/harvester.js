@@ -2,11 +2,20 @@
 	Screeps
 	Harvester Role
 	
-	Description: The purpose of the harvester creep is to travel to it territory, find the nearest active source to itself, and then extract energy. It then returns to its home spawn, and stores the energy in a container.
+	Purpose: Travel to its territory, find the nearest active source to itself, and then extract energy. It then returns to its home spawn, and stores the energy in a container.
 	Harvests: Energy
+	Build: [WORK,MOVE,CARRY] * Controller Level
 */
 
+// How talkative are we this tick?
+
+	// Do we have any friends nearby?
+	
+	// Do we have any allies nearby?
+
 // Determine the status of this creep (harvesting, returning, or recycling)
+
+	// If born, set to harvesting
 
 	// If harvesting, and full of energy, set to returning
 	
@@ -22,9 +31,9 @@
 	
 		// If so, find the nearest active source
 		
-		// See if we can harvest the source
+		// Try and harvest the source
 		
-			// If not, move towards the source
+			// If too far away, move towards source
 		
 	// If we are in the wrong territory
 	
@@ -34,7 +43,7 @@
 
 	// See if we are in the correct territory
 	
-		// If so, find the nearest non-full spawn, extension, link, or tower
+		// If so, find the nearest non-full spawn, extension, link, lab, or tower
 		
 		// If one of the above exists, see if we can transfer into it
 		
